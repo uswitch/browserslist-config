@@ -22,7 +22,7 @@ Current Support
   Edge >= 90
   Opera >= 62
   OperaMini >= 4
-  UCAndroid >= 1
+  UCAndroid >= 13
 ```
 
 [Supported browsers can be found on Notion](https://www.notion.so/rvu/Browser-support-4f8c037f60ef4245a84d36913215e079)
