@@ -1,11 +1,14 @@
 module.exports = [
-  "Chrome >= 43",
-  "iOS >= 8",
-  "Safari >= 8",
+  "Chrome >= 55",
+  "iOS  >= 9",
+  "Safari >= 9",
   "ie >= 11",
-  "Samsung >= 4",
+  "Samsung >= 11",
+  "Android >= 81",
   "Firefox ESR",
   "Firefox >= 52",
-  "Opera >= 53",
-  "Edge >= 14"
-]
+  "Edge >= 90",
+  "Opera >= 62",
+  "OperaMini >= 4",
+  "UCAndroid >= 13",
+];
