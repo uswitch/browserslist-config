@@ -22,3 +22,7 @@ Current Support
 ```
 
 [Supported browsers can be found on Notion](https://www.notion.so/rvu/Browser-support-4f8c037f60ef4245a84d36913215e079)
+
+## Publishing
+
+You can publish the current version with `npm publish`, which will push your build to [the package's GitHub packages page](https://github.com/uswitch/browserslist-config/pkgs/npm/browserslist-config). After that it can be installed with standard commands like `npm i -D @uswitch/browserslist-config@1`.
