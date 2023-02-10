@@ -18,6 +18,7 @@ Current Support
   Firefox ESR
   Firefox >= 52
   Edge >= 90
+  Android >= 77
 ```
 
 [Supported browsers can be found on Notion](https://www.notion.so/rvu/Browser-support-4f8c037f60ef4245a84d36913215e079)

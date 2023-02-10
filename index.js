@@ -5,5 +5,6 @@ module.exports = [
   "Samsung >= 11",
   "Firefox ESR",
   "Firefox >= 52",
-  "Edge >= 90"
+  "Edge >= 90",
+  "Android >= 77"
 ]
