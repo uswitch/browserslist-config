@@ -30,7 +30,7 @@ You can publish the current version with `npm publish`, which will push your bui
 
 Included in this repo is a script that you can use to help pick a browserslist config. 
 
-To run the script, you need CSVs in `./analyse/sources/source-name` taken from [google analytics](https://analytics.google.com/analytics/web/#/report/visitors-browser/a207299w265509p47160568/_u.date00=20221013&_u.date01=20230112/). The files need to be cleaned up before being processed - they need to become valid CSVs with a header row and without the final row, which includes aggregations irrespective of the page. When you run the script, you should provide `source-name` with the environment variable `DATASET`, so the script knows where to get the sources.
+To run the script, you need CSVs in `./analyse/sources/source-name` taken from [google analytics](https://analytics.google.com/analytics/web/#/report/visitors-browser/a207299w265509p47160568/_u.date00=20221013&_u.date01=20230112/). The files need to be cleaned up before being processed - they need to become valid CSVs with a header row and without the final row, which includes aggregations irrespective of the page. When you run the script, you should provide the folder `source-name` as the environment variable `DATASET`, so the script knows where to get the sources.
 
 The script works by sorting the CSV rows by session, descending, taking up to a target percentile (by default 99%) and then generating a support table containing the lowest version of each browser in the list with the 1% tail removed. When taking the target percentile, all the browsers with names matching this regex are skipped: `/explorer|silk|opera|uc browser|mozilla compatible agent/i`. In theory this means you could fail to meet the target percentile, but for the 2022-3 data, this did not happen.
 
@@ -40,7 +40,13 @@ The outputs `supportTableSupports` and `machineFriendlySupportTable` correspond 
 
 To see these in action, let's run through a way we might get a report for the 2022-3 data.
 
-First, we'd run `DATASET=2022-3 npm run analyse` without any arguments, printing this:
+First, 
+
+```bash
+DATASET=2022-3 npm run analyse
+```
+
+would print 
 
 ```js
 {
