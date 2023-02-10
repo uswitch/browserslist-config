@@ -11,18 +11,13 @@
 Current Support 
 
 ```
-  Chrome >= 55
-  iOS  >= 9
   Safari >= 9
-  ie >= 11
+  iOS >= 9
+  Chrome >= 56
   Samsung >= 11
-  Android >= 81
   Firefox ESR
   Firefox >= 52
   Edge >= 90
-  Opera >= 62
-  OperaMini >= 4
-  UCAndroid >= 13
 ```
 
 [Supported browsers can be found on Notion](https://www.notion.so/rvu/Browser-support-4f8c037f60ef4245a84d36913215e079)
