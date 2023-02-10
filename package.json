@@ -1,6 +1,6 @@
 {
   "name": "@uswitch/browserslist-config",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "RVU browserslist config",
   "main": "index.js",
   "keywords": [
