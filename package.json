@@ -1,6 +1,6 @@
 {
   "name": "@uswitch/browserslist-config",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "RVU browserslist config",
   "main": "index.js",
   "keywords": [
@@ -9,7 +9,8 @@
   "author": "RVU",
   "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "analyse": "ts-node analyse/index.ts"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/uswitch/browserslist-config/issues"
   },
-  "homepage": "https://github.com/uswitch/browserslist-config#readme"
+  "homepage": "https://github.com/uswitch/browserslist-config#readme",
+  "devDependencies": {
+    "csv": "^6.2.7",
+    "ts-node": "^10.9.1"
+  }
 }
