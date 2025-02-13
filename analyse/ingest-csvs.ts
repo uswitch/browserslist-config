@@ -16,8 +16,8 @@ const formatRecords = (rawRecords: RawRecord[]) => {
 
       const out = {
         browser: record.Browser,
-        'browser version': record['Browser Version'],
-        'browser major version': record['Browser Version'].replace(/\..*/, ''),
+        'browser version': record['Browser version'],
+        'browser major version': record['Browser version'].replace(/\..*/, ''),
         sessions,
       }
       return out

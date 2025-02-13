@@ -31,7 +31,17 @@ You can publish the current version with `npm publish`, which will push your bui
 
 Included in this repo is a script that you can use to help pick a browserslist config.
 
-To run the script, you need CSVs in `./analyse/sources/source-name` taken from [google analytics](https://analytics.google.com/analytics/web/#/report/visitors-browser/a207299w265509p47160568/_u.date00=20221013&_u.date01=20230112/). The files need to be cleaned up before being processed - they need to become valid CSVs with a header row and without the final row, which includes aggregations irrespective of the page. When you run the script, you should provide the folder `source-name` as the environment variable `DATASET`, so the script knows where to get the sources.
+To run the script, you need CSVs in `./analyse/sources/source-name` taken from Google Analytics. An Exploration has been created to help with this [here](https://analytics.google.com/analytics/web/#/report/visitors-browser/a207299w265509p47160568/_u.date00=20221013&_u.date01=20230112/) but the files need to be cleaned up before being processed.
+
+- Export exploration dataset
+- Open CSV in your code editor
+- Remove the comment block at the top of the file so that line 1 is the header row
+- Remove line 2 which contains the totals summary
+- Ensure that you save the file without a blank final line
+
+When you run the script, you should provide the folder `source-name` as the environment variable `DATASET`, so the script knows where to get the sources.
+
+You may find that some cells are blank (for example, if the browser name is `(not set)` then it will likely have a blank version number).
 
 The script works by sorting the CSV rows by session, descending, taking up to a target percentile (by default 99%) and then generating a support table containing the lowest version of each browser in the list with the 1% tail removed. When taking the target percentile, all the browsers with names matching this regex are skipped: `/explorer|silk|opera|uc browser|mozilla compatible agent/i`. In theory this means you could fail to meet the target percentile, but for the 2022-3 data, this did not happen.
 

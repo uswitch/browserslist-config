@@ -1,6 +1,6 @@
 export interface RawRecord {
   Browser: string;
-  "Browser Version": string;
+  "Browser version": string;
   Users: string;
   Sessions: string;
   "Pages/Session": string;
