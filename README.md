@@ -31,7 +31,7 @@ You can publish the current version with `npm publish`, which will push your bui
 
 Included in this repo is a script that you can use to help pick a browserslist config.
 
-To run the script, you need CSVs in `./analyse/sources/source-name` taken from Google Analytics. An Exploration has been created to help with this [here](https://analytics.google.com/analytics/web/#/report/visitors-browser/a207299w265509p47160568/_u.date00=20221013&_u.date01=20230112/) but the files need to be cleaned up before being processed.
+To run the script, you need CSVs in `./analyse/sources/source-name` taken from Google Analytics. An Exploration has been created to help with this [here](https://analytics.google.com/analytics/web/#/analysis/p254960035/edit/Za7UibFzTJGT7tD1MZNdRw) but the files need to be cleaned up before being processed.
 
 - Export exploration dataset
 - Open CSV in your code editor
