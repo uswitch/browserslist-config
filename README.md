@@ -8,6 +8,19 @@
   ]
 ```
 
+Or if using Vite/Esbuild:
+
+```js
+import { esbuildTarget } from '@uswitch/browserslist-config'
+
+...
+vite: {
+    build: {
+      target: esbuildTarget,
+    },
+...
+```
+
 Current Support
 
 ```
